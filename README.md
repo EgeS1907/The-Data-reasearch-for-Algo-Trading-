@@ -91,7 +91,7 @@ Esnek "Lines" (Çizgiler) yapısı. Zaman serisi mantığı (close[0], close[-1]
 Stratejimizde kullanmak amacıyla yeni bir data seti eklemek  için çekirdek kodda değişiklik veya karmaşık dataframe manipülasyonu yapmamız gerekir. Oldukça zordur
 ### BackTrader:
 Object-Oriented-Programming(oop) kullanılarak kolayca yeni veri sütunu eklenebilir. 
-#### Örnek Uygulama: BackTrader' a (P/E) verisi eklemeyelim
+#### Örnek Uygulama: BackTrader' a (P/E) verisi ekleyelim
 Adım 1: Yeni Veri Yapısını tanımlayalım (Class Inheritence)
  Backtrader'ın standart CSV okuyucusunu "miras alıp" (subclassing) ona yeni bir damar (line) ekliyoruz.
 ```python
@@ -155,3 +155,4 @@ class SmartStrategy(bt.Strategy):
 Sonuç olarak iki kütüphane arasında "data" açısından çok net ve ayırt edici farklar var. 
 FreqTrade kütüphanesi disk tabanlı olması sebebiyle büyük verilerle uğraşırken daha rahat olmamızı sağlayacaktır ancak sadece kripto varlıklarını hedef alması ve  katı data yapısı sebebiyle özelleştirilmiş ya da alternatif datalar eklenememesi işlevselliğini oldukça kısıtlamaktadır.
 BackTrader ise Ram Tabanlı olması sebebiyle büyük verilerde zorluk yaşamamıza sebep olacaktır ancak bir çok farklı data türünü entegre edebilmemiz, birden çok varlığı hedef alan trading yapabilmesi  ve benim açımdan en önemli avantajı olan  özelleştirilmiş data sütunlarını kolayca ekleyebilmemiz sayesinde teknik analizin ötesinde duygusal ve toplumsal parametreler ekleyip daha tutarlı  trading yapmamıza olanak sağlayacaktır. 
+
